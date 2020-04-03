@@ -21,10 +21,10 @@ class FolderIterator:
         self.foldername = Path(str(foldername))  # pathlib.Path instance
         self.uniques = []  # list instance
         self.duplicates = {}  # dict instance
-        self.readable_files = []  # list instance
-        self.file_content = {}  # dict instance
+        self.readable_files = self._get_readable_files()  # list instance
+        self.file_content = self._get_content()  # dict instance
 
-    def get_readable_files(self):
+    def _get_readable_files(self):
         """Function checks if the folder is a directory and returns only the files that are readable"""
         if self.foldername.is_dir():  # folder is a directory- get all sub-directories
             sub_files = (self.foldername.rglob('*'))
@@ -33,7 +33,7 @@ class FolderIterator:
             readable_files = [file_path for file_path in self.foldername if file_path.suffix != '']
         return readable_files
 
-    def get_content(self):
+    def _get_content(self):
         """Function reads files content and stores them in a dict{file_name: content}"""
         file_content = {}
         for i in range(len(self.readable_files)):
@@ -44,8 +44,6 @@ class FolderIterator:
         """Main function to find duplicate and unique files in the filesystem."""
         uniques = []
         duplicates = {}
-        self.readable_files = FolderIterator.get_readable_files(self)
-        self.file_content = FolderIterator.get_content(self)
         repeated_values = set([v for k, v in self.file_content.items()])
         for value in repeated_values:
             keys_specified_value = [v for k, v in self.file_content.items() if v == value]
