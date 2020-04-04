@@ -8,79 +8,59 @@ class Time:
         self.hour = hour
         self.minute = minute
         self.second = second
-        self.list_mode = [self.hour, self.minute, self.second]
-        self.int = self.check_int  # bool
-        self.positive = self.check_positive()  # bool
-        self.format_time = self.add_zero()  # list
-        self.hour_format = self.check_hour()  # bool
-        self.minute_format = self.check_minute()  # bool
-        self.second_format = self.check_second()  # bool
-
-    TODO: 'not supposed to be bool, should probably include errors and exceptions'
 
     def check_int(self):
-        integers = [item for item in self.list_mode if type(item) == int]
-        if len(integers) == 3:
-            return True
-        else:
-            return False
+        """Checks if the hour,minute and second are integers"""
+        return [item if type(item) == int else 0 for item in [self.hour, self.minute, self.second]]
 
     def check_positive(self):
-        if self.check_int():
-            positive_numbers = [num for num in self.list_mode if num >= 0]
-            if len(positive_numbers) == 3:
-                return True
-            else:
-                return False
-        else:
-            return False
+        """Checks if the hour,minute and second are positive numbers"""
+        return [num if num >= 0 else 0 for num in self.check_int()]
 
-    def check_hour(self):
-        if self.check_positive():
-            if self.hour in range(25):
-                return True
-        else:
-            return False
+    def check_time(self):
+        """Checks if the hour,minute and second are valid in a 24 hour clock"""
+        time = self.check_positive()
+        if time[0] not in range(24):
+            time[0] = 0
+        if time[1] not in range(60):
+            time[1] = 0
+        if time[2] not in range(60):
+            time[2] = 0
+        return time
 
-    def check_minute(self):
-        if self.check_positive():
-            if self.minute in range(60):
-                return True
-        else:
-            return False
-
-    def check_second(self):
-        if self.check_positive():
-            if self.second in range(60):
-                return True
-        else:
-            return False
-
-    def add_zero(self):  # check if hour/minute/second lower than 10- add 0 in front of them
-        if self.check_positive():
-            new_format = []
-            for num in self.list_mode:
-                if num in range(10):
-                    str_num = str(num)
-                    num = str_num.zfill(2)
-                new_format.append(num)
-            return new_format
+    def add_zero(self):
+        """Checks if the hour,minute and second are single digits- if so add 0 in front of them to get a double digit
+        number """
+        new_format = []
+        for num in self.check_time():
+            if num in range(10):
+                str_num = str(num)
+                num = str_num.zfill(2)
+            new_format.append(num)
+        return new_format
 
     def __str__(self):
         str_to_print = f"""The time is:
-            {self.format_time[0]}:{self.format_time[1]}:{self.format_time[2]}"""
+            {self.add_zero()[0]}:{self.add_zero()[1]}:{self.add_zero()[2]}"""
         return str_to_print
+
+    # Define a Time().is_after(other_time) method. that returns True if the first Time() is later than the other_time
+    # instance, and False otherwise. 00:00:00 is the earliest, 23:59:59 is the latest.
+    def is_after(self, other):
+        """Checks if time is after other time and returns bool"""
+        time = self.check_time()
+        other_time = other.check_time()
+        timing = [(time[0] - other_time[0]), (time[1] - other_time[1]), (time[2] - other_time[2])]
+        if timing[0] in range(24) and timing[1] in range(60) and timing[2] in range(60):
+            return True
+        return False
 
 
 def main():
-    timing = Time(hour=24, minute=61, second=3)
-    print(timing.int())
-    print(timing.check_positive())
-    print(timing.check_hour())
-    print(timing.check_minute())
-    print(timing.check_second())
-    print(timing.format_time)
-    print(timing.__str__())
+    time = Time(hour=23, minute=59, second=59)
+    time2 = Time(hour=0, minute=0, second=3)
+    print(time.__str__())
+    print(time.is_after(time2))
 
 
 if __name__ == '__main__':

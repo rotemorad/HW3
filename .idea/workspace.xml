@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a03513aa-5aea-46a4-ab4f-641059987cf5" name="Default Changelist" comment="Arranged code- still need to try the filter method">
-      <change afterPath="$PROJECT_DIR$/hw3_q2.py" afterDir="false" />
+    <list default="true" id="a03513aa-5aea-46a4-ab4f-641059987cf5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h3_q2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3_q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw3_q2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
       <recent name="C:\Users\rotem\OneDrive\python_sagol_couse\HW3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hw3_q2">
+  <component name="RunManager" selected="Python tests.pytest in test_q2.py">
     <configuration name="hw3_q1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HW3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,15 +127,15 @@
     </configuration>
     <list>
       <item itemvalue="Python.hw3_q1" />
+      <item itemvalue="Python.hw3_q2" />
       <item itemvalue="Python tests.pytest in test_q1.py" />
       <item itemvalue="Python tests.pytest in test_q2.py" />
-      <item itemvalue="Python.hw3_q2" />
       <item itemvalue="Python tests.pytest for test_q2.TestTime" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hw3_q2" />
         <item itemvalue="Python tests.pytest in test_q2.py" />
+        <item itemvalue="Python.hw3_q2" />
         <item itemvalue="Python tests.pytest for test_q2.TestTime" />
         <item itemvalue="Python tests.pytest in test_q1.py" />
         <item itemvalue="Python.hw3_q1" />
@@ -182,14 +181,22 @@
       <option name="project" value="LOCAL" />
       <updated>1585943532991</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Defined more methods, I need to check how to make them count in the class and not just as bool">
+      <created>1585958768423</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585958768423</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="COMMITING" />
     <MESSAGE value="Arranged code- still need to try the filter method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arranged code- still need to try the filter method" />
+    <MESSAGE value="Defined more methods, I need to check how to make them count in the class and not just as bool" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined more methods, I need to check how to make them count in the class and not just as bool" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -199,46 +206,46 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="100" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1289.819@0.0.1289.819" timestamp="1585927051767" />
-    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1585943530306">
+    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1585958766552">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1585943530306" />
+    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1585958766552" />
     <state x="490" y="286" key="Github.ShareDialog" timestamp="1585924270352">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="490" y="286" key="Github.ShareDialog/0.0.1289.819@0.0.1289.819" timestamp="1585924270352" />
-    <state width="1262" height="287" key="GridCell.Tab.0.bottom" timestamp="1585957512858">
+    <state width="1262" height="287" key="GridCell.Tab.0.bottom" timestamp="1586001194411">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="287" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1585957512858" />
-    <state width="1262" height="287" key="GridCell.Tab.0.center" timestamp="1585957512858">
+    <state width="1262" height="287" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586001194411" />
+    <state width="1262" height="287" key="GridCell.Tab.0.center" timestamp="1586001194411">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="287" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1585957512858" />
-    <state width="1262" height="287" key="GridCell.Tab.0.left" timestamp="1585957512858">
+    <state width="1262" height="287" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1586001194411" />
+    <state width="1262" height="287" key="GridCell.Tab.0.left" timestamp="1586001194411">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="287" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1585957512858" />
-    <state width="1262" height="287" key="GridCell.Tab.0.right" timestamp="1585957512858">
+    <state width="1262" height="287" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1586001194411" />
+    <state width="1262" height="287" key="GridCell.Tab.0.right" timestamp="1586001194411">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="287" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1585957512858" />
-    <state width="1262" height="244" key="GridCell.Tab.1.bottom" timestamp="1585956884364">
+    <state width="1262" height="287" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1586001194411" />
+    <state width="1262" height="244" key="GridCell.Tab.1.bottom" timestamp="1585996164062">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.bottom/0.0.1289.819@0.0.1289.819" timestamp="1585956884364" />
-    <state width="1262" height="244" key="GridCell.Tab.1.center" timestamp="1585956884363">
+    <state width="1262" height="244" key="GridCell.Tab.1.bottom/0.0.1289.819@0.0.1289.819" timestamp="1585996164062" />
+    <state width="1262" height="244" key="GridCell.Tab.1.center" timestamp="1585996164062">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.center/0.0.1289.819@0.0.1289.819" timestamp="1585956884363" />
-    <state width="1262" height="244" key="GridCell.Tab.1.left" timestamp="1585956884363">
+    <state width="1262" height="244" key="GridCell.Tab.1.center/0.0.1289.819@0.0.1289.819" timestamp="1585996164062" />
+    <state width="1262" height="244" key="GridCell.Tab.1.left" timestamp="1585996164046">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.left/0.0.1289.819@0.0.1289.819" timestamp="1585956884363" />
-    <state width="1262" height="244" key="GridCell.Tab.1.right" timestamp="1585956884363">
+    <state width="1262" height="244" key="GridCell.Tab.1.left/0.0.1289.819@0.0.1289.819" timestamp="1585996164046" />
+    <state width="1262" height="244" key="GridCell.Tab.1.right" timestamp="1585996164062">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.right/0.0.1289.819@0.0.1289.819" timestamp="1585956884363" />
+    <state width="1262" height="244" key="GridCell.Tab.1.right/0.0.1289.819@0.0.1289.819" timestamp="1585996164062" />
     <state x="41" y="0" key="SettingsEditor" timestamp="1585926946196">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -247,10 +254,10 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="137" y="81" key="Vcs.Push.Dialog.v2/0.0.1289.819@0.0.1289.819" timestamp="1585943550656" />
-    <state x="293" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1585924247233">
+    <state x="293" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1585991939636">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="293" y="197" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1585924247233" />
+    <state x="293" y="197" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1585991939636" />
     <state x="303" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585953623923">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -259,5 +266,16 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1289.819@0.0.1289.819" timestamp="1585941543563" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hw3_q2.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
