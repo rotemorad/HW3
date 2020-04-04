@@ -48,19 +48,36 @@ class Time:
     # instance, and False otherwise. 00:00:00 is the earliest, 23:59:59 is the latest.
     def is_after(self, other):
         """Checks if time is after other time and returns bool"""
+        # TODO not working properly
         time = self.check_time()
         other_time = other.check_time()
-        timing = [(time[0] - other_time[0]), (time[1] - other_time[1]), (time[2] - other_time[2])]
-        if timing[0] in range(24) and timing[1] in range(60) and timing[2] in range(60):
-            return True
+        if time != other_time:
+            timing = [(time[0] - other_time[0]), (time[1] - other_time[1]), (time[2] - other_time[2])]
+            if timing[0] in range(24) and timing[1] in range(60) and timing[2] in range(60):
+                return True
         return False
+
+    def __add__(self, other):
+        time = self.check_time()
+        other_time = other.check_time()
+        timing = [(time[0] + other_time[0]), (time[1] + other_time[1]), (time[2] + other_time[2])]
+        while timing[2] not in range(60):
+            timing[2] -= 60
+            timing[1] += 1
+        while timing[1] not in range(60):
+            timing[1] -= 60
+            timing[0] += 1
+        while timing[0] not in range(24):
+            timing[0] -= 24
+        return timing
 
 
 def main():
-    time = Time(hour=23, minute=59, second=59)
-    time2 = Time(hour=0, minute=0, second=3)
+    time = Time(hour=1, minute=59, second=59)
+    time2 = Time(hour=1, minute=0, second=0)
     print(time.__str__())
-    print(time.is_after(time2))
+    print(time2.is_after(time))
+    print(time.__add__(time2))
 
 
 if __name__ == '__main__':
