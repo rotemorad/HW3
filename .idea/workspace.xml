@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586089368845</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added a validate_time method">
+      <created>1586095916064</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586095916064</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -219,7 +226,8 @@
     <MESSAGE value="Arranged code- still need to try the filter method" />
     <MESSAGE value="Defined more methods, I need to check how to make them count in the class and not just as bool" />
     <MESSAGE value="Defined more methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined more methods" />
+    <MESSAGE value="Added a validate_time method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a validate_time method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -229,46 +237,50 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="100" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1289.819@0.0.1289.819" timestamp="1585927051767" />
-    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1586089367661">
+    <state x="93" y="93" width="1103" height="633" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586101542442">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1586089367661" />
+    <state x="93" y="93" width="1103" height="633" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1289.819@0.0.1289.819" timestamp="1586101542442" />
+    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1586095915056">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1586095915056" />
     <state x="490" y="286" key="Github.ShareDialog" timestamp="1585924270352">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="490" y="286" key="Github.ShareDialog/0.0.1289.819@0.0.1289.819" timestamp="1585924270352" />
-    <state width="1262" height="283" key="GridCell.Tab.0.bottom" timestamp="1586095881122">
+    <state width="1262" height="283" key="GridCell.Tab.0.bottom" timestamp="1586101620619">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
-    <state width="1262" height="283" key="GridCell.Tab.0.center" timestamp="1586095881122">
+    <state width="1262" height="283" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586101620619" />
+    <state width="1262" height="283" key="GridCell.Tab.0.center" timestamp="1586101620619">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
-    <state width="1262" height="283" key="GridCell.Tab.0.left" timestamp="1586095881122">
+    <state width="1262" height="283" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1586101620619" />
+    <state width="1262" height="283" key="GridCell.Tab.0.left" timestamp="1586101620619">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
-    <state width="1262" height="283" key="GridCell.Tab.0.right" timestamp="1586095881122">
+    <state width="1262" height="283" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1586101620619" />
+    <state width="1262" height="283" key="GridCell.Tab.0.right" timestamp="1586101620619">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
-    <state width="1262" height="244" key="GridCell.Tab.1.bottom" timestamp="1586089149438">
+    <state width="1262" height="283" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1586101620619" />
+    <state width="1262" height="244" key="GridCell.Tab.1.bottom" timestamp="1586101217945">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586089149438" />
-    <state width="1262" height="244" key="GridCell.Tab.1.center" timestamp="1586089149437">
+    <state width="1262" height="244" key="GridCell.Tab.1.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
+    <state width="1262" height="244" key="GridCell.Tab.1.center" timestamp="1586101217945">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.center/0.0.1289.819@0.0.1289.819" timestamp="1586089149437" />
-    <state width="1262" height="244" key="GridCell.Tab.1.left" timestamp="1586089149437">
+    <state width="1262" height="244" key="GridCell.Tab.1.center/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
+    <state width="1262" height="244" key="GridCell.Tab.1.left" timestamp="1586101217945">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.left/0.0.1289.819@0.0.1289.819" timestamp="1586089149437" />
-    <state width="1262" height="244" key="GridCell.Tab.1.right" timestamp="1586089149438">
+    <state width="1262" height="244" key="GridCell.Tab.1.left/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
+    <state width="1262" height="244" key="GridCell.Tab.1.right" timestamp="1586101217945">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.right/0.0.1289.819@0.0.1289.819" timestamp="1586089149438" />
+    <state width="1262" height="244" key="GridCell.Tab.1.right/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
     <state x="41" y="0" key="SettingsEditor" timestamp="1585926946196">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -295,13 +307,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/hw3_q2.py</url>
-          <line>81</line>
+          <line>86</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_q2.py</url>
           <line>13</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hw3_q2.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,9 +8,10 @@ class Time:
         self.hour = hour
         self.minute = minute
         self.second = second
+        self.valid_time = self.validate_time()
 
     def validate_time(self):
-        """Checks if the time is valid, if not valid- changes to default time """
+        """Checks if the time is valid, if not valid- changes it to default time """
         #  Checks if the hour,minute and second are integers
         time_integers = [item if type(item) == int else 0 for item in
                          [self.hour, self.minute, self.second]]
@@ -33,10 +34,12 @@ class Time:
         for num in self.validate_time():
             if num in range(10):
                 str_num = str(num)
-                num = str_num.zfill(2)
-            new_format.append(num)
+                number = str_num.zfill(2)
+                new_format.append(number)
+            else:
+                new_format.append(num)
         [self.hour, self.minute, self.second] = new_format
-        return [self.hour, self.minute, self.second]
+        return self.hour, self.minute, self.second
 
     def __str__(self):
         str_to_print = f"""The time is:
@@ -49,7 +52,11 @@ class Time:
         other_time = other.validate_time()
         if time != other_time:
             timing = [(time[0] - other_time[0]), (time[1] - other_time[1]), (time[2] - other_time[2])]
-            if timing[0] in range(24) and timing[1] in range(60) and timing[2] in range(60):
+            if timing[0] in range(1, 24):
+                return True
+            elif timing[1] in range(1, 60):
+                return True
+            elif timing[2] in range(60):
                 return True
         return False
 
@@ -57,23 +64,21 @@ class Time:
         time = self.validate_time()
         other_time = other.validate_time()
         timing = [(time[0] + other_time[0]), (time[1] + other_time[1]), (time[2] + other_time[2])]
-        if timing[2] % 60 not in range(timing[2], 60):
+        while timing[2] not in range(60):
             timing[2] = timing[2] % 60
             timing[1] += 1
-        if timing[1] % 60 not in range(timing[1], 60):
+        while timing[1] not in range(60):
             timing[1] = timing[1] % 60
             timing[0] += 1
-        if timing[0] % 24 not in range(timing[0], 24):
+        while timing[0] % 24 not in range(24):
             timing[0] = timing[0] % 24
-        [self.hour, self.minute, self.second] = timing
-        return [self.hour, self.minute, self.second]
+        timing = Time(hour=timing[0], minute=timing[1], second=timing[2])
+        return timing
 
 
 def main():
-    time = Time(hour=5, minute=30, second=61)
-    print(time.validate_time())
-    print(time.__str__())
-    time2 = Time(hour=5, minute=17, second=0)
+    time = Time(0, 0, 50)
+    time2 = Time(1, 1, 50)
     print(time.is_after(time2))
     print(time.__add__(time2))
 
