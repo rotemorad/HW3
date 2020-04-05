@@ -74,14 +74,3 @@ class Time:
             timing[0] = timing[0] % 24
         timing = Time(hour=timing[0], minute=timing[1], second=timing[2])
         return timing
-
-
-def main():
-    time = Time(0, 0, 50)
-    time2 = Time(1, 1, 50)
-    print(time.is_after(time2))
-    print(time.__add__(time2))
-
-
-if __name__ == '__main__':
-    main()
