@@ -8,33 +8,34 @@ class Time:
         self.hour = hour
         self.minute = minute
         self.second = second
-        self.list = [self.hour, self.minute, self.second]
 
     def check_int(self):
         """Checks if the hour,minute and second are integers"""
-        self.list = [item if type(item) == int else 0 for item in [self.hour, self.minute, self.second]]
-        return self.list
+        [self.hour, self.minute, self.second] = [item if type(item) == int else 0 for item in
+                                                 [self.hour, self.minute, self.second]]
+        return [self.hour, self.minute, self.second]
 
     def check_positive(self):
         """Checks if the hour,minute and second are positive numbers"""
-        self.list = [num if num >= 0 else 0 for num in self.check_int()]
-        return self.list
+        [self.hour, self.minute, self.second] = [num if num >= 0 else 0 for num in self.check_int()]
+        return [self.hour, self.minute, self.second]
 
     def check_time(self):
         """Checks if the hour,minute and second are valid in a 24 hour clock"""
-        if self.list[0] not in range(24):
-            self.list[0] = 0
-        if self.list[1] not in range(60):
-            self.list[1] = 0
-        if self.list[2] not in range(60):
-            self.list[2] = 0
-        return self.list
+        list_time = [self.hour, self.minute, self.second]
+        if list_time[0] not in range(24):
+            list_time[0] = 0
+        if list_time[1] not in range(60):
+            list_time[1] = 0
+        if list_time[2] not in range(60):
+            list_time[2] = 0
+        return list_time
 
     def add_zero(self):
         """Checks if the hour,minute and second are single digits- if so add 0 in front of them to get a double digit
         number """
         new_format = []
-        for num in self.list:
+        for num in [self.hour, self.minute, self.second]:
             if num in range(10):
                 str_num = str(num)
                 num = str_num.zfill(2)
@@ -48,7 +49,7 @@ class Time:
 
     def is_after(self, other):
         """Checks if time is after other time and returns bool"""
-        time = self.list
+        time = self.check_time()
         other_time = other.check_time()
         if time != other_time:
             timing = [(time[0] - other_time[0]), (time[1] - other_time[1]), (time[2] - other_time[2])]
@@ -57,22 +58,22 @@ class Time:
         return False
 
     def __add__(self, other):
-        time = self.list
+        time = self.check_time()
         other_time = other.check_time()
-        self.list = [(time[0] + other_time[0]), (time[1] + other_time[1]), (time[2] + other_time[2])]
-        if self.list[2] % 60 not in range(self.list[2], 60):
-            self.list[2] = self.list[2] % 60
-            self.list[1] += 1
-        if self.list[1] % 60 not in range(self.list[1], 60):
-            self.list[1] = self.list[1] % 60
-            self.list[0] += 1
-        if self.list[0] % 24 not in range(self.list[0], 24):
-            self.list[0] = self.list[0] % 24
-        return self.list
+        timing = [(time[0] + other_time[0]), (time[1] + other_time[1]), (time[2] + other_time[2])]
+        if timing[2] % 60 not in range(timing[2], 60):
+            timing[2] = timing[2] % 60
+            timing[1] += 1
+        if timing[1] % 60 not in range(timing[1], 60):
+            timing[1] = timing[1] % 60
+            timing[0] += 1
+        if timing[0] % 24 not in range(timing[0], 24):
+            timing[0] = timing[0] % 24
+        return timing
 
 
 def main():
-    time = Time(hour=23)
+    time = Time(hour=25)
     time2 = Time(hour=5, minute=17, second=0)
     print(time.check_int())
     print(time.check_positive())
