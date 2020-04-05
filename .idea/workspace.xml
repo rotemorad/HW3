@@ -37,7 +37,7 @@
       <recent name="C:\Users\rotem\OneDrive\python_sagol_couse\HW3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hw3_q2">
+  <component name="RunManager" selected="Python tests.pytest in test_q2.py">
     <configuration name="hw3_q2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HW3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,7 +59,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_q2.TestTime.test_float_input" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_q2.TestTime.test_hours_overflow" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="HW3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,7 +70,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_q2.TestTime.test_float_input&quot;" />
+      <option name="_new_target" value="&quot;test_q2.TestTime.test_hours_overflow&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -120,19 +120,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_q2.TestTime.test_float_input" />
       <item itemvalue="Python tests.pytest for test_q2.TestTime.test_seconds_input" />
       <item itemvalue="Python tests.pytest for test_q2.TestTime.test_minutes_input" />
       <item itemvalue="Python.hw3_q2" />
       <item itemvalue="Python tests.pytest in test_q2.py" />
+      <item itemvalue="Python tests.pytest for test_q2.TestTime.test_hours_overflow" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hw3_q2" />
         <item itemvalue="Python tests.pytest in test_q2.py" />
+        <item itemvalue="Python.hw3_q2" />
+        <item itemvalue="Python tests.pytest for test_q2.TestTime.test_hours_overflow" />
         <item itemvalue="Python tests.pytest for test_q2.TestTime.test_minutes_input" />
         <item itemvalue="Python tests.pytest for test_q2.TestTime.test_seconds_input" />
-        <item itemvalue="Python tests.pytest for test_q2.TestTime.test_float_input" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586088502379</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Defined more methods">
+      <created>1586089368845</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586089368845</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -222,30 +229,30 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="100" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1289.819@0.0.1289.819" timestamp="1585927051767" />
-    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1586088500937">
+    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1586089367661">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1586088500937" />
+    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1586089367661" />
     <state x="490" y="286" key="Github.ShareDialog" timestamp="1585924270352">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="490" y="286" key="Github.ShareDialog/0.0.1289.819@0.0.1289.819" timestamp="1585924270352" />
-    <state width="1262" height="283" key="GridCell.Tab.0.bottom" timestamp="1586089355872">
+    <state width="1262" height="283" key="GridCell.Tab.0.bottom" timestamp="1586095881122">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586089355872" />
-    <state width="1262" height="283" key="GridCell.Tab.0.center" timestamp="1586089355872">
+    <state width="1262" height="283" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
+    <state width="1262" height="283" key="GridCell.Tab.0.center" timestamp="1586095881122">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1586089355872" />
-    <state width="1262" height="283" key="GridCell.Tab.0.left" timestamp="1586089355872">
+    <state width="1262" height="283" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
+    <state width="1262" height="283" key="GridCell.Tab.0.left" timestamp="1586095881122">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1586089355872" />
-    <state width="1262" height="283" key="GridCell.Tab.0.right" timestamp="1586089355872">
+    <state width="1262" height="283" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
+    <state width="1262" height="283" key="GridCell.Tab.0.right" timestamp="1586095881122">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1586089355872" />
+    <state width="1262" height="283" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1586095881122" />
     <state width="1262" height="244" key="GridCell.Tab.1.bottom" timestamp="1586089149438">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -288,7 +295,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/hw3_q2.py</url>
-          <line>85</line>
+          <line>81</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
