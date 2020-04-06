@@ -27,43 +27,18 @@ class Time:
         [self.hour, self.minute, self.second] = time_positive_nums
         return self.hour, self.minute, self.second
 
-    def add_zero(self):
-        """Checks if the hour,minute and second are single digits- if so add 0 in front of them to get a double digit
-        number """
-        new_format = []
-        for num in self.validate_time():
-            if num in range(10):
-                str_num = str(num)
-                number = str_num.zfill(2)
-                new_format.append(number)
-            else:
-                new_format.append(num)
-        [self.hour, self.minute, self.second] = new_format
-        return self.hour, self.minute, self.second
-
-    def __str__(self):
-        str_to_print = f"""The time is:
-            {self.add_zero()[0]}:{self.add_zero()[1]}:{self.add_zero()[2]}"""
-        return str_to_print
-
     def is_after(self, other):
         """Checks if time is after other time and returns bool"""
-        time = self.validate_time()
-        other_time = other.validate_time()
-        if time != other_time:
-            timing = [(time[0] - other_time[0]), (time[1] - other_time[1]), (time[2] - other_time[2])]
-            if timing[0] in range(1, 24):
-                return True
-            elif timing[1] in range(1, 60):
-                return True
-            elif timing[2] in range(60):
-                return True
+        if self.hour > other.hour:
+            return True
+        elif self.minute > other.minute:
+            return True
+        elif self.second > other.second:
+            return True
         return False
 
     def __add__(self, other):
-        time = self.validate_time()
-        other_time = other.validate_time()
-        timing = [(time[0] + other_time[0]), (time[1] + other_time[1]), (time[2] + other_time[2])]
+        timing = [(self.hour + other.hour), (self.minute + other.minute), (self.second + other.second)]
         while timing[2] not in range(60):
             timing[2] = timing[2] % 60
             timing[1] += 1
@@ -74,3 +49,32 @@ class Time:
             timing[0] = timing[0] % 24
         timing = Time(hour=timing[0], minute=timing[1], second=timing[2])
         return timing
+
+    def add_zero(self):
+        """Checks if the hour,minute and second are single digits- if so add 0 in front of them to get a double digit
+        number """
+        new_format = []
+        for num in self:
+            if num in range(10):
+                str_num = str(num)
+                number = str_num.zfill(2)
+                new_format.append(number)
+            else:
+                new_format.append(num)
+        self.hour, self.minute, self.second = new_format
+        return self.hour, self.minute, self.second
+
+    def __str__(self):
+        str_to_print = f"""The time is:
+            {self.hour}:{self.minute}:{self.second}"""
+        return str_to_print
+
+
+def main():
+    time = Time(0, 0, 0)
+    time2 = Time(0, 0, 1)
+    print(time.is_after(time2))
+
+
+if __name__ == '__main__':
+    main()
