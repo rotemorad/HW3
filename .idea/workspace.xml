@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a03513aa-5aea-46a4-ab4f-641059987cf5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hw3_q3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_data.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3_q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw3_q2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
       <recent name="C:\Users\rotem\OneDrive\python_sagol_couse\HW3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hw3_q2">
+  <component name="RunManager" selected="Python tests.pytest in test_q3.py">
     <configuration name="hw3_q2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HW3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,6 +52,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hw3_q2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hw3_q3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="HW3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hw3_q3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,36 +96,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_q2.TestTime.test_minutes_input" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="HW3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_q2.TestTime.test_minutes_input&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_q2.TestTime.test_seconds_input" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="HW3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_q2.TestTime.test_seconds_input&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in test_q2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="HW3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,20 +111,35 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_q3.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="HW3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_q3.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_q2.TestTime.test_seconds_input" />
-      <item itemvalue="Python tests.pytest for test_q2.TestTime.test_minutes_input" />
       <item itemvalue="Python.hw3_q2" />
       <item itemvalue="Python tests.pytest in test_q2.py" />
       <item itemvalue="Python tests.pytest for test_q2.TestTime.test_hours_overflow" />
+      <item itemvalue="Python.hw3_q3" />
+      <item itemvalue="Python tests.pytest in test_q3.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_q3.py" />
+        <item itemvalue="Python.hw3_q3" />
         <item itemvalue="Python.hw3_q2" />
         <item itemvalue="Python tests.pytest in test_q2.py" />
         <item itemvalue="Python tests.pytest for test_q2.TestTime.test_hours_overflow" />
-        <item itemvalue="Python tests.pytest for test_q2.TestTime.test_minutes_input" />
-        <item itemvalue="Python tests.pytest for test_q2.TestTime.test_seconds_input" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586095916064</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Passed all tests!">
+      <created>1586101680938</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586101680938</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Deleted main">
+      <created>1586101732406</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586101732406</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -227,7 +248,9 @@
     <MESSAGE value="Defined more methods, I need to check how to make them count in the class and not just as bool" />
     <MESSAGE value="Defined more methods" />
     <MESSAGE value="Added a validate_time method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a validate_time method" />
+    <MESSAGE value="Passed all tests!" />
+    <MESSAGE value="Deleted main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted main" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -241,58 +264,62 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="93" y="93" width="1103" height="633" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1289.819@0.0.1289.819" timestamp="1586101542442" />
-    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1586101679859">
+    <state x="359" y="204" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586169913212">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1586101679859" />
+    <state x="359" y="204" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1289.819@0.0.1289.819" timestamp="1586169913212" />
+    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1586101731336">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1289.819@0.0.1289.819" timestamp="1586101731336" />
     <state x="490" y="286" key="Github.ShareDialog" timestamp="1585924270352">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="490" y="286" key="Github.ShareDialog/0.0.1289.819@0.0.1289.819" timestamp="1585924270352" />
-    <state width="1262" height="283" key="GridCell.Tab.0.bottom" timestamp="1586101710321">
+    <state width="1262" height="283" key="GridCell.Tab.0.bottom" timestamp="1586170837893">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586101710321" />
-    <state width="1262" height="283" key="GridCell.Tab.0.center" timestamp="1586101710321">
+    <state width="1262" height="283" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586170837893" />
+    <state width="1262" height="283" key="GridCell.Tab.0.center" timestamp="1586170837892">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1586101710321" />
-    <state width="1262" height="283" key="GridCell.Tab.0.left" timestamp="1586101710321">
+    <state width="1262" height="283" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1586170837892" />
+    <state width="1262" height="283" key="GridCell.Tab.0.left" timestamp="1586170837892">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1586101710321" />
-    <state width="1262" height="283" key="GridCell.Tab.0.right" timestamp="1586101710321">
+    <state width="1262" height="283" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1586170837892" />
+    <state width="1262" height="283" key="GridCell.Tab.0.right" timestamp="1586170837892">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="283" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1586101710321" />
-    <state width="1262" height="244" key="GridCell.Tab.1.bottom" timestamp="1586101217945">
+    <state width="1262" height="283" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1586170837892" />
+    <state width="1262" height="244" key="GridCell.Tab.1.bottom" timestamp="1586168313320">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
-    <state width="1262" height="244" key="GridCell.Tab.1.center" timestamp="1586101217945">
+    <state width="1262" height="244" key="GridCell.Tab.1.bottom/0.0.1289.819@0.0.1289.819" timestamp="1586168313320" />
+    <state width="1262" height="244" key="GridCell.Tab.1.center" timestamp="1586168313320">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.center/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
-    <state width="1262" height="244" key="GridCell.Tab.1.left" timestamp="1586101217945">
+    <state width="1262" height="244" key="GridCell.Tab.1.center/0.0.1289.819@0.0.1289.819" timestamp="1586168313320" />
+    <state width="1262" height="244" key="GridCell.Tab.1.left" timestamp="1586168313320">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.left/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
-    <state width="1262" height="244" key="GridCell.Tab.1.right" timestamp="1586101217945">
+    <state width="1262" height="244" key="GridCell.Tab.1.left/0.0.1289.819@0.0.1289.819" timestamp="1586168313320" />
+    <state width="1262" height="244" key="GridCell.Tab.1.right" timestamp="1586168313320">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1262" height="244" key="GridCell.Tab.1.right/0.0.1289.819@0.0.1289.819" timestamp="1586101217945" />
-    <state x="41" y="0" key="SettingsEditor" timestamp="1585926946196">
+    <state width="1262" height="244" key="GridCell.Tab.1.right/0.0.1289.819@0.0.1289.819" timestamp="1586168313320" />
+    <state x="41" y="0" key="SettingsEditor" timestamp="1586166069999">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="41" y="0" key="SettingsEditor/0.0.1289.819@0.0.1289.819" timestamp="1585926946196" />
-    <state x="137" y="81" key="Vcs.Push.Dialog.v2" timestamp="1586088510863">
+    <state x="41" y="0" key="SettingsEditor/0.0.1289.819@0.0.1289.819" timestamp="1586166069999" />
+    <state x="137" y="81" key="Vcs.Push.Dialog.v2" timestamp="1586101742599">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="137" y="81" key="Vcs.Push.Dialog.v2/0.0.1289.819@0.0.1289.819" timestamp="1586088510863" />
-    <state x="293" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1586086174835">
+    <state x="137" y="81" key="Vcs.Push.Dialog.v2/0.0.1289.819@0.0.1289.819" timestamp="1586101742599" />
+    <state x="293" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1586165273107">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="293" y="197" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1586086174835" />
+    <state x="293" y="197" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1586165273107" />
     <state x="303" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585953623923">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -305,11 +332,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hw3_q2.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_q2.py</url>
           <line>13</line>
