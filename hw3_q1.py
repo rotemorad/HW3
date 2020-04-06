@@ -48,12 +48,3 @@ class FolderIterator:
             if len(keys) != 1:
                 self.duplicates.update({keys[0]: keys[1:]})
         return self.duplicates, self.uniques
-
-
-def main():
-    file = FolderIterator('base')
-    print(file.iter_folder())
-
-
-if __name__ == '__main__':
-    main()
