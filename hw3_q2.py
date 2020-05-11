@@ -1,17 +1,17 @@
-def valid_time_part(part, max_value):
-    return 0 if type(part) != int or part not in range(max_value) else part
-
-
 class Time:
     """
     Represents the time of the day.
     Attributes: hour, minute, second
     """
 
+    @staticmethod
+    def valid_time_part(part, max_value):
+        return 0 if type(part) != int or part not in range(max_value) else part
+
     def __init__(self, hour=0, minute=0, second=0):
-        self.hour = valid_time_part(hour, 24)
-        self.minute = valid_time_part(minute, 60)
-        self.second = valid_time_part(second, 60)
+        self.hour = self.valid_time_part(hour, 24)
+        self.minute = self.valid_time_part(minute, 60)
+        self.second = self.valid_time_part(second, 60)
 
     def is_after(self, other):
         """Checks if time is after other time and returns bool"""
